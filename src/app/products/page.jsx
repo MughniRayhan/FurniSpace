@@ -38,7 +38,7 @@ export default async function page() {
                 <h3 className="card-title font-bold">{product.title}</h3>
                 <p className="text-sm text-gray-600">{product.description}</p>
                 <p className='text-sm text-[#6e0d25] font-semibold'>Price: {product.price}</p>
-              <Link href="/"> 
+              <Link href={`/products/${product._id}`}> 
               <button className="btn btn-outline rounded text-[#6e0d25] hover:bg-[#6e0d25] font-bold  hover:text-white">
                 View Details
              </button></Link>
