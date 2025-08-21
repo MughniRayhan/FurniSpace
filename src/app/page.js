@@ -1,9 +1,10 @@
 import React from 'react'
+import Banner from './components/Banner'
 
-export default function page() {
+export default function Home() {
   return (
     <div>
-      <h1 className="text-4xl font-bold">Hello world</h1>
+      <Banner/>
     </div>
   )
 }

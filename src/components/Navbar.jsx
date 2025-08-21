@@ -13,7 +13,7 @@ export default function Navbar() {
     </li>
     </>
   return (
-    <nav className="navbar  px-10 bg-white">
+    <nav className="navbar  px-10 bg-white border-b border-gray-200 shadow-2xl">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
