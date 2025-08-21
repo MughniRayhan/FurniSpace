@@ -7,7 +7,7 @@ const Banner = () => {
       <div className=" max-w-7xl mx-auto md:max-w-full  px-6 md:px-0 grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
         
         {/* Left: Text */}
-        <div className="text-center md:text-left order-2 md:order-1 md:px-12">
+        <div className="text-center md:text-left order-2 md:order-1 md:px-12 py-5">
           <h1 className="text-3xl md:text-6xl font-bold text-gray-900 leading-tight">
             Elevate Your Home with Modern Furniture
           </h1>
@@ -15,7 +15,7 @@ const Banner = () => {
             Discover timeless furniture pieces designed to bring comfort, 
             elegance, and style to your living spaces. Perfect for every corner of your home.
           </p>
-          <button className="mt-6 px-6 py-3 rounded-lg bg-[#6e0d25] text-white font-semibold hover:bg-[#49111c] transition">
+          <button className="mt-6 sm:px-6 px-4 py-3 rounded-lg bg-[#6e0d25] text-white font-semibold hover:bg-[#49111c] transition">
             Shop Now
           </button>
         </div>
