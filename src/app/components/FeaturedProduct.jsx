@@ -1,10 +1,10 @@
-import dbConnect from '@/lib/dbConnect'
+import dbConnect, { collectionNamesObj } from '@/lib/dbConnect'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 export default async function FeaturedProduct() {
-    const productsCollection = await dbConnect("test_products");
+    const productsCollection = await dbConnect(collectionNamesObj.productsCollection);
   const products = await productsCollection.find({}).toArray();
  
   return (

@@ -1,6 +1,8 @@
 import { MongoClient, ServerApiVersion } from "mongodb";
 
-
+export const collectionNamesObj = {
+     productsCollection: "test_products"
+}
 
 export default async function dbConnect(collectionName) {
   const uri = process.env.MONGODB_URI;
