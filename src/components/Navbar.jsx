@@ -42,8 +42,11 @@ export default function Navbar() {
     </ul>
   </div>
 
-  <div className="navbar-end space-x-4">
+  <div className="navbar-end space-x-4 flex gap-2">
     <button className="btn btn-outline rounded text-[#6e0d25] font-semibold hover:bg-[#6e0d25] hover:text-white">Login</button>
+     <Link href={'/register'}>
+     <button className="btn btn-outline rounded text-[#6e0d25] font-semibold hover:bg-[#6e0d25] hover:text-white">Sign Up</button>
+     </Link>
   </div>
 </nav>
   )
