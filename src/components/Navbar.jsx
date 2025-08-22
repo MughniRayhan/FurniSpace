@@ -13,6 +13,13 @@ export default function Navbar() {
      <li>
         <Link href={'/products'}>Products</Link>
     </li>
+    {
+      status === 'authenticated' && (
+        <li>
+          <Link href={'/dashboard/add-product'}>Add Product</Link>
+        </li>
+      )  
+    }
     </>
   return (
     <nav className="navbar  sm:px-10 px-4 bg-white border-b border-gray-200 shadow-2xl">
