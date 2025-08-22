@@ -43,7 +43,9 @@ export default function Navbar() {
   </div>
 
   <div className="navbar-end space-x-4 flex gap-2">
+    <Link href={'/login'}>
     <button className="btn btn-outline rounded text-[#6e0d25] font-semibold hover:bg-[#6e0d25] hover:text-white">Login</button>
+    </Link>
      <Link href={'/register'}>
      <button className="btn btn-outline rounded text-[#6e0d25] font-semibold hover:bg-[#6e0d25] hover:text-white">Sign Up</button>
      </Link>
