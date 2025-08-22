@@ -57,7 +57,7 @@ export default function AddProductPage() {
         <input name="title" type="text" placeholder="Product Title" className="input input-bordered w-full" required />
         <input name="price" type="number" placeholder="Price" className="input input-bordered w-full" required />
         <input name="category" type="text" placeholder="Category" className="input input-bordered w-full" required />
-        <input name="image" type="text" placeholder="Image URL (/assets/img1.png)" className="input input-bordered w-full" />
+        <input name="image" type="text" placeholder="Image URL (/assets/img1.jpg)" className="input input-bordered w-full" />
         <textarea name="description" placeholder="Description" className="textarea textarea-bordered w-full"></textarea>
        
 
