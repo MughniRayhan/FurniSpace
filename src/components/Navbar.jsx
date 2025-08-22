@@ -35,7 +35,7 @@ export default function Navbar() {
       </ul>
     </div>
     {/* logo */}
-     <Link href={'/'} >
+     <Link href={'/'} className='outline-0'>
      <Image
        src="/assets/logo.png"
        alt="Logo"

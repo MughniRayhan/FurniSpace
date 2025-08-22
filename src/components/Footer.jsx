@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -8,7 +9,14 @@ export default function Footer() {
         
         {/* Brand Info */}
         <div >
-          <h2 className="text-xl font-bold mb-3">FurniHaven</h2>
+           <Link href={'/'} className='outline-0'>
+     <Image
+       src="/assets/logo.png"
+       alt="Logo"
+       width={107}
+       height={86}
+     />
+    </Link>
           <p className="text-sm leading-relaxed text-[#6e0d25]">
             Discover stylish and modern furniture for every room.  
             Quality designs that make your home more beautiful and functional.
