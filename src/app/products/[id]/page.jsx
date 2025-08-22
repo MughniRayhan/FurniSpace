@@ -8,7 +8,7 @@ export default async function ProductDetailsPage({params}) {
     const productsCollection = await dbConnect(collectionNamesObj.productsCollection);
     const data = await productsCollection.findOne({_id: new ObjectId(p.id)});
   return (
-    <div className='py-6 max-w-7xl mx-auto px-6 md:px-12 '>
+    <div className='py-10 max-w-7xl mx-auto px-6 md:px-12 '>
       <div  className="card bg-white shadow-xl flex flex-col md:flex-row items-center ">
                     <figure className="">
                       <Image

@@ -1,9 +1,11 @@
 "use client";
+import { signOut, useSession } from 'next-auth/react';
 import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
 
 export default function Navbar() {
+   const {data: session, status} = useSession()
     const navMenu = <>
     <li>
         <Link href={'/'}>Home</Link>
@@ -13,7 +15,7 @@ export default function Navbar() {
     </li>
     </>
   return (
-    <nav className="navbar  px-10 bg-white border-b border-gray-200 shadow-2xl">
+    <nav className="navbar  sm:px-10 px-4 bg-white border-b border-gray-200 shadow-2xl">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -42,13 +44,20 @@ export default function Navbar() {
     </ul>
   </div>
 
-  <div className="navbar-end space-x-4 flex gap-2">
-    <Link href={'/login'}>
-    <button className="btn btn-outline rounded text-[#6e0d25] font-semibold hover:bg-[#6e0d25] hover:text-white">Login</button>
+  <div className="navbar-end space-x-4 ">
+    { status === 'authenticated' ? (<>
+    <button className="btn btn-outline rounded text-[#6e0d25] font-semibold hover:bg-[#6e0d25] hover:text-white"  
+    onClick={()=>signOut()}>Logout
+    </button>
+    </>) : (
+      <>
+      <Link href={'/login'}>
+    <button className="sm:btn sm:btn-outline rounded text-[#6e0d25] text-sm sm:text-base font-semibold hover:bg-[#6e0d25] hover:text-white">Login</button>
     </Link>
-     <Link href={'/register'}>
-     <button className="btn btn-outline rounded text-[#6e0d25] font-semibold hover:bg-[#6e0d25] hover:text-white">Sign Up</button>
-     </Link>
+    
+      </>
+    )}
+    
   </div>
 </nav>
   )
