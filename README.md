@@ -5,6 +5,13 @@ It allows users to browse products, view details, and authenticated users can ad
 
 ---
 
+🌐 Live Demo
+
+🔗 CozyHaven Live
+ (https://furni-space-phi.vercel.app/)
+
+ ---
+
 ## 🚀 Features
 
 - Browse all available products from the database
